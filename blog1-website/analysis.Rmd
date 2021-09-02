@@ -184,14 +184,17 @@ st_br2 %>%
   kable(table.attr = "class='cor-table'",
                col.names = c("Variables", "Mean", "Max", "Mean", "Max",
                              "1.", "2.", "3."),
-        caption = "COVID-19 Summarized Statistic in Brazil 2021") %>%
+        caption = "COVID-19 Summarized Statistic in Brazil") %>%
+  column_spec(1, bold = TRUE, background = "beige") %>%
   kable_styling(bootstrap_options = c("striped", "hover")) %>%
   add_header_above(c(" ", "2020" = 2, "2021" = 2, "Correlation 2021" = 3)) %>%
   footnote(general = "Source: Our World in Data")
 ```
 
 
-The summary statistics demonstrated straightforwardly that Brazil did not achieve a huge improve on controlling the spread of COVID-19 infection even after the vaccinations with `r paste(round((max(covid_br$people_vaccinated)/max(covid_br$population))*100,2), "%")` of people vaccinated with at least one dose. It is common knowledge that it may take times for vaccine to take effect in controlling the spread, but how did Brazil's situation keep deteriorating that the maximum daily confirmed case in 2021 is much higher than 2021? Manuela Andrenoi in The New York Times reveals that "...with efforts by state governments to combat the virus often at odds with the positions adopted by the president, who pressured public health officials to do away with social distancing recommendations, calling Covid-19 a "measly cold".", with two health ministers left after clashes with president Mr.Bolsonaro. The chaos of both politically and socially ultimately results in Brazil's dilemma.
+The summary statistics demonstrated straightforwardly that Brazil did not achieve a huge improve on controlling the spread of COVID-19 infection even after the vaccinations with `r paste(round((max(covid_br$people_vaccinated)/max(covid_br$population))*100,2), "%")` of people vaccinated with at least one dose. It is common knowledge that it may take times for vaccine to take effect in controlling the spread, but how did Brazil's situation keep deteriorating that the maximum daily confirmed case in 2021 is much higher than 2021? 
+
+Manuela Andrenoi in The New York Times reveals that "...with efforts by state governments to combat the virus often at odds with the positions adopted by the president, who pressured public health officials to do away with social distancing recommendations, calling Covid-19 a "measly cold".", with two health ministers left after clashes with president Mr.Bolsonaro. The chaos of both politically and socially ultimately results in Brazil's dilemma.
 
 
 
