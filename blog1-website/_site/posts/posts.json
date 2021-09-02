@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Brief COVID-19 Analysis in Brazili",
+    "title": "Brief COVID-19 Analysis in Brazil",
     "description": "This blog is aiming to explore the COVID-19 situation in Brazil and examining whether the process of people being vaccinated had an effect on decreasing the confirmed COVID-cases in Brazil in 2021.",
     "author": [
       {
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-09-02T18:31:52+10:00",
+    "last_modified": "2021-09-02T20:37:27+10:00",
     "input_file": {}
   }
 ]
