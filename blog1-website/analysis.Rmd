@@ -1,0 +1,144 @@
+---
+title: "Analysis"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set()
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(sparkline)
+library(DT)
+```
+
+```{r}
+covid_br <- read_csv(here::here("owid-covid-data.csv")) %>%
+  filter(location == "Brazil") %>%
+  mutate(day = strftime(date, "%d"),
+         month = strftime(date, "%m"),
+         year = strftime(date, "%Y")) %>%
+  mutate(month = as.numeric(month)) %>%
+  mutate(month = factor(month.abb[month], levels = month.abb)) %>%
+  select(location, date, year, month, day,
+         total_cases, new_cases,total_deaths, new_deaths,
+         total_vaccinations, people_vaccinated,
+         people_fully_vaccinated,population)
+
+covid_br[is.na(covid_br)] <- 0
+#data collected from https://github.com/owid/covid-19-data/tree/master/public/data
+```
+
+
+```{r}
+
+
+br1 <- covid_br %>%
+  group_by(year, month) %>%
+  mutate(cases = sum(new_cases),
+         deaths = sum(new_deaths),
+         total_vaccinations = sum(total_vaccinations),
+         people_vaccinated = sum(people_vaccinated),
+         people_fully_vaccinated = sum(people_fully_vaccinated))
+```
+
+
+
+#### font 
+
+font test
+
+```{r}
+covid_br1 <- covid_br %>%
+  ungroup() %>%
+  mutate(case_growth = round(((new_cases - lag(new_cases))/lag(new_cases))*100,2),
+         death_growth = round(((new_deaths - lag(new_deaths))/lag(new_deaths))*100,2),
+         vaccination_growth = round(((total_vaccinations - lag(total_vaccinations))/lag(total_vaccinations))*100,2)) %>%
+  select(year, month, new_cases, new_deaths, total_vaccinations, people_vaccinated, people_fully_vaccinated,
+         case_growth, death_growth, vaccination_growth)
+
+
+covid_br1[is.na(covid_br1)] <- 0
+covid_br1$case_growth[which(is.infinite(covid_br1$case_growth))] <- 0
+covid_br1$death_growth[which(is.infinite(covid_br1$death_growth))] <- 0
+covid_br1$vaccination_growth[which(is.infinite(covid_br1$vaccination_growth))] <- 0
+```
+
+```{r}
+cb <- htmlwidgets::JS('function(){HTMLWidgets.staticRender();}')
+
+covid_br1 %>%
+  group_by(year, month) %>%
+  summarise(new_cases = sum(new_cases),
+            new_deaths = sum(new_deaths),
+            total_vaccinations = sum(total_vaccinations),
+            case_growth = spk_chr(case_growth, type = "line"),
+            death_growth = spk_chr(death_growth, type = "line"),
+            vaccination_growth = spk_chr(vaccination_growth, type = "line")) %>%
+  datatable(colnames = c("Year", "Month",
+                         "Confirmed cases", "Confirmed deaths",
+                         "Total vaccinations administered",
+                         "Case growth (%)",
+                         "Death growth (%)",
+                         "Vaccination growth (%)"),
+            caption = "COVID-19 Statistics in Brazil",
+            filter = "top",
+            escape = FALSE,
+            options = list(pageLength = 8,
+                           fnDrawCallback = cb)) %>%
+  spk_add_deps()
+```
+
+
+```{r}
+covid_br2 <- covid_br1 %>%
+  filter(year == 2021)
+
+corr2 <- cor(select(covid_br2, new_cases, new_deaths, people_vaccinated, people_fully_vaccinated))
+corr2[upper.tri(corr2, diag = T)] <- NA
+
+st_br2 <- as_tibble(corr2)
+
+st_br2 <- st_br2 %>%
+  mutate(
+  Variable = c("1.Confirmed cases",
+               "2.Confirmed deaths",
+               "3.People vaccinated",
+               "4.People fully vaccinated"),
+  Mean = round(c(mean(covid_br2$new_cases),
+                 mean(covid_br2$new_deaths),
+                 mean(covid_br2$people_vaccinated),
+                 mean(covid_br2$people_fully_vaccinated)), 0),
+  SD = round(c(sd(covid_br2$new_cases),
+               sd(covid_br2$new_deaths),
+               sd(covid_br2$people_vaccinated),
+               sd(covid_br2$people_fully_vaccinated)), 0),
+  Max = round(c(max(covid_br2$new_cases),
+                max(covid_br2$new_deaths),
+                max(covid_br2$people_vaccinated),
+                max(covid_br2$people_fully_vaccinated)), 0),
+  new_cases = ifelse(is.na(new_cases), "", round(new_cases, 4)),
+  new_deaths = ifelse(is.na(new_deaths), "", round(new_deaths, 4)),
+  people_vaccinated = ifelse(is.na(people_vaccinated), "", round(people_vaccinated, 4))) %>%
+  select(Variable, Mean, SD, Max, new_cases, new_deaths, people_vaccinated)
+```
+
+
+```{r}
+st_br2 %>% 
+  kable(table.attr = "class='cor-table'",
+               col.names = c("Variables", "Mean", "SD", "Max",
+                             "1.", "2.", "3."),
+        caption = "COVID-19 Summarized Statistic in Brazil 2021") %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  footnote(general = "Source: Our World in Data")
+```
+
+
+
+
+
+
