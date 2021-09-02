@@ -14,6 +14,7 @@ library(knitr)
 library(kableExtra)
 library(sparkline)
 library(DT)
+library(plotly)
 ```
 
 ### Data Description
@@ -92,7 +93,7 @@ covid_br1 <- covid_br %>%
   mutate(case_growth = round(((new_cases - lag(new_cases))/lag(new_cases))*100,2),
          death_growth = round(((new_deaths - lag(new_deaths))/lag(new_deaths))*100,2),
          vaccination_growth = round(((total_vaccinations - lag(total_vaccinations))/lag(total_vaccinations))*100,2)) %>%
-  select(year, month, new_cases, new_deaths, total_vaccinations, people_vaccinated, people_fully_vaccinated,
+  select(date,year, month, new_cases, new_deaths, total_vaccinations, people_vaccinated, people_fully_vaccinated,
          case_growth, death_growth, vaccination_growth)
 
 
@@ -130,9 +131,40 @@ covid_br1 %>%
   spk_add_deps()
 ```
 
+```{r}
+covid_brm <- covid_br1 %>%
+  group_by(year, month) %>%
+  summarise(case_growth = sum(case_growth),
+            death_growth = sum(death_growth),
+            vaccination_growth = sum(vaccination_growth))
+```
+
+```{r}
+p2 <- covid_brm %>%
+  filter(year == 2021) %>%
+  ggplot() +
+  geom_line(aes(x = month, y = case_growth, group = 1, 
+                colour = "Case growth")) +
+  geom_line(aes(x = month, y = death_growth, group = 1,
+                colour = "Death growth")) +
+  geom_line(aes(x = month, y = vaccination_growth, group = 1,
+                colour = "Vaccination growth")) +
+  theme_bw() +
+  ylab("Growth rate (%)") +
+  xlab("Month in 2021") +
+  ggtitle("COVID-19 related growth trends in 2021")
+
+ggplotly(p2)
+```
+
+
+
+
 The table offers a brief overview of how the number of confirmed cases and deaths fluctuated over 2020 to current, it also implies that Brazil started it's vaccination process on Jan 2021. We can see that the growth of total vaccinations administered is slowing down on late Feb 2021, which is only about one month after vaccination released. The trend is then steady after Mar 2021.
 
-The question is, did the vaccination controls the outbreak of COVID-19 in Brazil? Examining the case growth rate you may discover that there's little short-term influence of vaccination in restraining the COVID-19 confirmed cases and deaths, that the daily case & death growth is still fluctuating with various peaks presents.
+The question is, did the vaccination controls the outbreak of COVID-19 in Brazil? Examining the case growth rate you may discover that there's little short-term influence of vaccination in restraining the COVID-19 confirmed cases and deaths, that the daily case & death growth is still fluctuating with various peaks presents. 
+
+Furthermore, examining the plot that explores the growth on monthly basis, we can finally discover some relationship of case growth with vaccination growth, especially from June 2021, the lines are trending on the contrary that increase in case growth is resulted by decrease in vaccination.
 
 ```{r}
 covid_br1a <- covid_br1 %>%
@@ -192,7 +224,7 @@ st_br2 %>%
 ```
 
 
-The summary statistics demonstrated straightforwardly that Brazil did not achieve a huge improve on controlling the spread of COVID-19 infection even after the vaccinations with `r paste(round((max(covid_br$people_vaccinated)/max(covid_br$population))*100,2), "%")` of people vaccinated with at least one dose. It is common knowledge that it may take times for vaccine to take effect in controlling the spread, but how did Brazil's situation keep deteriorating that the maximum daily confirmed case in 2021 is much higher than 2021? 
+The summary statistics demonstrated straightforwardly that Brazil did not achieve a huge improve on controlling the spread of COVID-19 infection, with weak negative relationship between vaccinated and cases. Even after the vaccinations with `r paste(round((max(covid_br$people_vaccinated)/max(covid_br$population))*100,2), "%")` of people vaccinated with at least one dose. It is common knowledge that it may take times for vaccine to take effect in controlling the spread, but how did Brazil's situation keep deteriorating that the maximum daily confirmed case in 2021 is much higher than 2021? 
 
 Manuela Andrenoi in The New York Times reveals that "...with efforts by state governments to combat the virus often at odds with the positions adopted by the president, who pressured public health officials to do away with social distancing recommendations, calling Covid-19 a "measly cold".", with two health ministers left after clashes with president Mr.Bolsonaro. The chaos of both politically and socially ultimately results in Brazil's dilemma.
 
