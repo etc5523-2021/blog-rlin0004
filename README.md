@@ -2,7 +2,7 @@
 
 
 This is the blog of [Ruimin Lin].
-The URL of this blog is [FILL].
+The URL of this blog is [https://quirky-perlman-f8a8f9.netlify.app/about.html].
 
 ## Blog Post 1
 
@@ -10,7 +10,7 @@ This assessment is due Fri Sep 3 2021 11.55PM AEST.
 
 My selected country is [Brazil].
 
-The relevant blog post for this assessment is in [FILL].html
+The relevant blog post for this assessment is in [analysis].html
 
 - [ ] Selected a country
 - [ ] Website with R markdown 
