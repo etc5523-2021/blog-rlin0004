@@ -2,7 +2,7 @@
 
 
 This is the blog of [Ruimin Lin].
-The URL of this blog is [https://quirky-perlman-f8a8f9.netlify.app/].
+The URL of this blog is [https://etc5523-rlin0004.netlify.app/].
 
 ## Blog Post 1
 
