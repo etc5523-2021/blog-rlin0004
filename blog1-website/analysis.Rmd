@@ -4,16 +4,55 @@ output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set()
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+library(distill)
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(sparkline)
 library(DT)
 ```
+
+### Data Description
+
+The original COVID-19 and vaccination data is obtained from [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data). The data is then filtered and cleaned so that it is ready for further exploration.
+
+The variables included in the data are:
+
+```{r}
+vt <- tibble(
+  Variable = c("location", "date", "year", "month", "day",
+               "total_cases", "new_cases", "total_deaths", "new_deaths",
+               "total_vaccinations", "people_vaccinated", "people_fully_vaccinated", "population"),
+  Description = c("Country of focus",
+                  "Date presented as Date type data",
+                  "Year, extracted from date to enable the convenience of further exploration",
+                  "Month, extracted from date to enable the convenience of further exploration",
+                  "Date, extracted from date",
+                  "Cumulative count of confirmed cases",
+                  "Cases confirmed on daily basis",
+                  "Cumulative count of confirmed deaths",
+                  "Deaths confirmed on daily basis",
+                  "Total vaccinations administered",
+                  "People that received at least one dose",
+                  "People that received all doses prescribed confirmed as fully vaccinated",
+                  "Population of target country")
+)
+```
+
+```{r}
+vt %>%
+  kable(caption = "Variable description for owid COVID-19 data") %>%
+  column_spec(1, bold = TRUE, background = "beige") %>%
+  kable_styling() %>%
+  kable_paper() %>%
+  scroll_box(width = "800px", height = "300px") %>%
+  footnote(general = "Data collected from Our World in Data")
+```
+
 
 ```{r}
 covid_br <- read_csv(here::here("owid-covid-data.csv")) %>%
@@ -33,9 +72,9 @@ covid_br[is.na(covid_br)] <- 0
 ```
 
 
+
+
 ```{r}
-
-
 br1 <- covid_br %>%
   group_by(year, month) %>%
   mutate(cases = sum(new_cases),
@@ -46,10 +85,6 @@ br1 <- covid_br %>%
 ```
 
 
-
-#### font 
-
-font test
 
 ```{r}
 covid_br1 <- covid_br %>%
@@ -66,6 +101,9 @@ covid_br1$case_growth[which(is.infinite(covid_br1$case_growth))] <- 0
 covid_br1$death_growth[which(is.infinite(covid_br1$death_growth))] <- 0
 covid_br1$vaccination_growth[which(is.infinite(covid_br1$vaccination_growth))] <- 0
 ```
+
+
+### Exploration
 
 ```{r}
 cb <- htmlwidgets::JS('function(){HTMLWidgets.staticRender();}')
@@ -84,13 +122,23 @@ covid_br1 %>%
                          "Case growth (%)",
                          "Death growth (%)",
                          "Vaccination growth (%)"),
-            caption = "COVID-19 Statistics in Brazil",
+            caption = "COVID-19 Case, Death, Vaccination trend in Brazil",
             filter = "top",
             escape = FALSE,
             options = list(pageLength = 8,
                            fnDrawCallback = cb)) %>%
   spk_add_deps()
 ```
+
+The table offers a brief overview of how the number of confirmed cases and deaths fluctuated over 2020 to current, it also implies that Brazil started it's vaccination process on Jan 2021. We can see that the growth of total vaccinations administered is slowing down on late Feb 2021, which is only about one month after vaccination released. The trend is then steady after Mar 2021.
+
+The question is, did the vaccination controls the outbreak of COVID-19 in Brazil? Examining the case growth rate you may discover that there's little short-term influence of vaccination in restraining the COVID-19 confirmed cases and deaths, that the daily case & death growth is still fluctuating with various peaks presents.
+
+```{r}
+covid_br1a <- covid_br1 %>%
+  filter(year == 2020)
+```
+
 
 
 ```{r}
@@ -108,14 +156,18 @@ st_br2 <- st_br2 %>%
                "2.Confirmed deaths",
                "3.People vaccinated",
                "4.People fully vaccinated"),
+  Mean1 = round(c(mean(covid_br1a$new_cases),
+                 mean(covid_br1a$new_deaths),
+                 mean(covid_br1a$people_vaccinated),
+                 mean(covid_br1a$people_fully_vaccinated)), 0),
+  Max1 = round(c(max(covid_br1a$new_cases),
+                max(covid_br1a$new_deaths),
+                max(covid_br1a$people_vaccinated),
+                max(covid_br1a$people_fully_vaccinated)), 0),
   Mean = round(c(mean(covid_br2$new_cases),
                  mean(covid_br2$new_deaths),
                  mean(covid_br2$people_vaccinated),
                  mean(covid_br2$people_fully_vaccinated)), 0),
-  SD = round(c(sd(covid_br2$new_cases),
-               sd(covid_br2$new_deaths),
-               sd(covid_br2$people_vaccinated),
-               sd(covid_br2$people_fully_vaccinated)), 0),
   Max = round(c(max(covid_br2$new_cases),
                 max(covid_br2$new_deaths),
                 max(covid_br2$people_vaccinated),
@@ -123,19 +175,31 @@ st_br2 <- st_br2 %>%
   new_cases = ifelse(is.na(new_cases), "", round(new_cases, 4)),
   new_deaths = ifelse(is.na(new_deaths), "", round(new_deaths, 4)),
   people_vaccinated = ifelse(is.na(people_vaccinated), "", round(people_vaccinated, 4))) %>%
-  select(Variable, Mean, SD, Max, new_cases, new_deaths, people_vaccinated)
+  select(Variable, Mean1, Max1, Mean, Max, new_cases, new_deaths, people_vaccinated)
 ```
 
 
 ```{r}
 st_br2 %>% 
   kable(table.attr = "class='cor-table'",
-               col.names = c("Variables", "Mean", "SD", "Max",
+               col.names = c("Variables", "Mean", "Max", "Mean", "Max",
                              "1.", "2.", "3."),
         caption = "COVID-19 Summarized Statistic in Brazil 2021") %>%
   kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  add_header_above(c(" ", "2020" = 2, "2021" = 2, "Correlation 2021" = 3)) %>%
   footnote(general = "Source: Our World in Data")
 ```
+
+
+The summary statistics demonstrated straightforwardly that Brazil did not achieve a huge improve on controlling the spread of COVID-19 infection even after the vaccinations with `r paste(round((max(covid_br$people_vaccinated)/max(covid_br$population))*100,2), "%")` of people vaccinated with at least one dose. It is common knowledge that it may take times for vaccine to take effect in controlling the spread, but how did Brazil's situation keep deteriorating that the maximum daily confirmed case in 2021 is much higher than 2021? Manuela Andrenoi in The New York Times reveals that "...with efforts by state governments to combat the virus often at odds with the positions adopted by the president, who pressured public health officials to do away with social distancing recommendations, calling Covid-19 a "measly cold".", with two health ministers left after clashes with president Mr.Bolsonaro. The chaos of both politically and socially ultimately results in Brazil's dilemma.
+
+
+
+
+
+
+
+
 
 
 

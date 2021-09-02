@@ -1,8 +1,7 @@
 ---
 title: "Brief COVID-19 Analysis in Brazili"
 description: |
-  Welcome to our new blog, My Blog. We hope you enjoy 
-  reading what we have to say!
+  This blog is aiming to explore the COVID-19 situation in Brazil and examining whether the process of people being vaccinated had an effect on decreasing the confirmed COVID-cases in Brazil in 2021.
 author:
   - name: Ruimin Lin 
 date: 08-31-2021
