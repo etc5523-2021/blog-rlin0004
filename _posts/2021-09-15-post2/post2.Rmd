@@ -1,0 +1,108 @@
+---
+title: "COVID-19 in Bangladesh"
+description: |
+  A short description of the post.
+author:
+  - name: Ruimin Lin
+    url: {}
+date: 09-15-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+library(distill)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(sparkline)
+library(DT)
+library(plotly)
+library(coronavirus)
+library(leaflet)
+```
+
+
+```{r}
+covid_bd <- read_csv(here::here("owid-covid-data.csv")) %>%
+  filter(location == "Bangladesh") %>%
+  mutate(day = strftime(date, "%d"),
+         month = strftime(date, "%m"),
+         year = strftime(date, "%Y")) %>%
+  mutate(month = as.numeric(month)) %>%
+  mutate(month = factor(month.abb[month], levels = month.abb)) %>%
+  select(location, date, year, month, day,
+         new_cases, new_deaths,
+         new_vaccinations, positive_rate, new_tests, tests_per_case)
+
+covid_bd[is.na(covid_bd)] <- 0
+```
+
+```{r}
+covid_bdp <- covid_bd %>%
+  group_by(year, month) %>%
+  summarise(new_cases = sum(new_cases),
+            new_deaths = sum(new_deaths),
+            new_tests = sum(new_tests))
+```
+
+```{r}
+covid_bdp1 <- covid_bd %>%
+  ungroup() %>%
+  mutate(case_growth = round(((new_cases - lag(new_cases))/lag(new_cases))*100,2),
+         death_growth = round(((new_deaths - lag(new_deaths))/lag(new_deaths))*100,2),
+         test_growth =  round(((new_tests - lag(new_tests))/lag(new_tests))*100,2),
+         vaccination_growth = round(((new_vaccinations - lag(new_vaccinations))/lag(new_vaccinations))*100,2))%>%
+  select(date,year, month, new_cases, new_deaths, new_vaccinations, new_tests,
+         case_growth, death_growth, test_growth, vaccination_growth)
+
+covid_bdp1[is.na(covid_bdp1)] <- 0
+covid_bdp1$case_growth[which(is.infinite(covid_bdp1$case_growth))] <- 0
+covid_bdp1$death_growth[which(is.infinite(covid_bdp1$death_growth))] <- 0
+covid_bdp1$test_growth[which(is.infinite(covid_bdp1$test_growth))] <- 0
+covid_bdp1$vaccination_growth[which(is.infinite(covid_bdp1$vaccination_growth))] <- 0
+```
+
+```{r}
+bd1 <- covid_bdp1 %>%
+  filter(year == 2020) %>%
+  plot_ly(x = ~date, hovertemplate = "Date: %{x} <br>Count: %{y}",
+          line = list(width = 1)) %>%
+  add_lines(y = ~new_cases, name = "Confirmed cases",) %>%
+  add_lines(y = ~new_tests, name = "Tests performed") %>%
+  add_lines(y = ~new_vaccinations, 
+            yaxis = "y2", name = "Vaccinations administered") %>%
+  layout(title = "COVID-19 statistics in 2020 Bangladesh",
+         yaxis = list(title = "Cases and tests count"),
+         yaxis2 = list(title = "Vaccinations count", overlaying = "y", side = "right"))
+  
+bd1 %>% 
+  rangeslider()
+```
+
+```{r}
+bd2 <- covid_bdp1 %>%
+  filter(year == 2021) %>%
+  plot_ly(x = ~date, hovertemplate = "Date: %{x} <br>Count: %{y}",
+          line = list(width = 1)) %>%
+  add_lines(y = ~new_cases, name = "Confirmed cases",) %>%
+  add_lines(y = ~new_tests, name = "Tests performed") %>%
+  add_lines(y = ~new_vaccinations, 
+            yaxis = "y2", name = "Vaccinations administered") %>%
+  layout(title = "COVID-19 statistics in 2021 Bangladesh",
+         yaxis = list(title = "Cases and tests count"),
+         yaxis2 = list(title = "Vaccinations count", overlaying = "y", side = "right"))
+  
+bd2 %>% 
+  rangeslider()
+```
+
+
+
+

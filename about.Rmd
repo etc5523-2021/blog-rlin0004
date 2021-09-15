@@ -6,14 +6,16 @@ title: "Reference"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Websites
+### Reference used for COVID-19 analysis in Brazil
+
+#### Websites
 
 - Andrenoi. M., (2021, June 2). Coronavirus in Brazil: What You Need to Know. The New York Times. https://www.nytimes.com/article/brazil-coronavirus-cases.html
 
 - Our Data in World. (2021). owid. https://github.com/owid/covid-19-data/tree/master/public/data
 
 
-### R-packages
+#### R-packages
 
 - Hao Zhu (2021). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. R package version 1.3.4. https://CRAN.R-project.org/package=kableExtra
 

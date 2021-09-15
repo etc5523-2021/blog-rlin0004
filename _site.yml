@@ -8,8 +8,6 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Analysis"
-      href: analysis.html
     - text: "Reference"
       href: about.html
     - icon: fab fa-github

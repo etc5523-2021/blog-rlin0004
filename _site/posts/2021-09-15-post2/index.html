@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+<title>My Blog: COVID-19 in Bangladesh</title>
+
+<meta property="description" itemprop="description" content="A short description of the post."/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2021-09-15"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-09-15"/>
+<meta name="article:author" content="Ruimin Lin"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="My Blog: COVID-19 in Bangladesh"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="A short description of the post."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="My Blog"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="My Blog: COVID-19 in Bangladesh"/>
+<meta property="twitter:description" content="A short description of the post."/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["COVID-19 in Bangladesh"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ruimin Lin"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["09-15-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["post2_files/anchor-4.2.2/anchor.min.js","post2_files/bowser-1.9.3/bowser.min.js","post2_files/crosstalk-1.1.1/css/crosstalk.css","post2_files/crosstalk-1.1.1/js/crosstalk.js","post2_files/crosstalk-1.1.1/js/crosstalk.js.map","post2_files/crosstalk-1.1.1/js/crosstalk.min.js","post2_files/crosstalk-1.1.1/js/crosstalk.min.js.map","post2_files/distill-2.2.21/template.v2.js","post2_files/header-attrs-2.10/header-attrs.js","post2_files/htmlwidgets-1.5.3/htmlwidgets.js","post2_files/jquery-3.5.1/jquery-AUTHORS.txt","post2_files/jquery-3.5.1/jquery.js","post2_files/jquery-3.5.1/jquery.min.js","post2_files/jquery-3.5.1/jquery.min.map","post2_files/plotly-binding-4.9.4.1/plotly.js","post2_files/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css","post2_files/plotly-main-1.57.1/plotly-latest.min.js","post2_files/popper-2.6.0/popper.min.js","post2_files/tippy-6.2.7/tippy-bundle.umd.min.js","post2_files/tippy-6.2.7/tippy-light-border.css","post2_files/tippy-6.2.7/tippy.css","post2_files/tippy-6.2.7/tippy.umd.min.js","post2_files/typedarray-0.1/typedarray.min.js","post2_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description || ''}
+                </div>
+                <div class="search-item-preview">
+                  ${img}
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    sans-serif;
+  --mono-font:       monospace;
+  --body-font:       sans-serif;
+  --navbar-font:     sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter');
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      30px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    'Architects Daughter', sans-serif;
+  --mono-font:       monospace;
+  --body-font:       'Raleway', sans-serif;
+  --navbar-font:     'Architects Daughter', sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       25px;
+  --text-color:       #000000;
+  --text-size:        15px;
+  --hover-color:      #808080;
+  --bkgd-color:       #f5f5dc;
+}
+
+.distill-site-footer {
+  --text-color:       #7e7b88;
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #ca225e3d;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">
+/* base style */
+
+/* FONT FAMILIES */
+
+:root {
+  --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+.posts-list .post-preview p,
+.posts-list .description p {
+  font-family: var(--body-font), var(--body-default);
+}
+
+h1, h2, h3, h4, h5, h6,
+.posts-list .post-preview h2,
+.posts-list .description h2 {
+  font-family: var(--heading-font), var(--heading-default);
+}
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: var(--mono-font), var(--mono-default);
+}
+
+
+/*-- TITLE --*/
+d-title h1,
+.posts-list > h1 {
+  color: var(--title-color, black);
+}
+
+d-title h1 {
+  font-size: var(--title-size, 50px);
+}
+
+/*-- HEADERS --*/
+d-article h1,
+d-article h2,
+d-article h3,
+d-article h4,
+d-article h5,
+d-article h6 {
+  color: var(--header-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- BODY --*/
+d-article > p,  /* only text inside of <p> tags */
+d-article > ul, /* lists */
+d-article > ol {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+  font-size: var(--body-size, 1.06rem);
+}
+
+
+/*-- CODE --*/
+d-article div.sourceCode code,
+d-article pre code {
+  font-size: var(--code-size, 14px);
+}
+
+/*-- ASIDE --*/
+d-article aside {
+  font-size: var(--aside-size, 12px);
+  color: var(--aside-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- FIGURE CAPTIONS --*/
+figure .caption,
+figure figcaption,
+.figure .caption {
+  font-size: var(--fig-cap-size, 13px);
+  color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- METADATA --*/
+d-byline h3 {
+  font-size: var(--heading-size, 0.6rem);
+  color: var(--heading-color, rgba(0, 0, 0, 0.5));
+}
+
+d-byline {
+  font-size: var(--body-size, 0.8rem);
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+d-byline a,
+d-article d-byline a {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- TABLE OF CONTENTS --*/
+.d-contents nav h3 {
+  font-size: var(--heading-size, 18px);
+}
+
+.d-contents nav a {
+  font-size: var(--contents-size, 13px);
+}
+
+/*-- APPENDIX --*/
+d-appendix h3 {
+  font-size: var(--heading-size, 15px);
+  color: var(--heading-color, rgba(0, 0, 0, 0.65));
+}
+
+d-appendix {
+  font-size: var(--text-size, 0.8em);
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+d-appendix d-footnote-list a.footnote-backlink {
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+.distill-site-header .title {
+  font-size: var(--title-size, 18px);
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a,
+.nav-dropdown .nav-dropbtn {
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.nav-dropdown .nav-dropbtn {
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  font-size: var(--text-size, 15px);
+}
+
+.distill-site-header a:hover,
+.nav-dropdown:hover .nav-dropbtn {
+  color: var(--hover-color, white);
+}
+
+.distill-site-header {
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer {
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer a:hover {
+  color: var(--hover-color, white);
+}</style>
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="../../site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="../../site_libs/plotly-binding-4.9.4.1/plotly.js"></script>
+  <script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="../../site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="../../site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+  <link href="../../site_libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="../../site_libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"COVID-19 in Bangladesh","description":"A short description of the post.","authors":[{"author":"Ruimin Lin","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-09-15T00:00:00.000+10:00","citationText":"Lin, 2021"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">My Blog</a>
+<a href="../../index.html">Home</a>
+<a href="../../about.html">Reference</a>
+<a href="https://github.com/rstudio/distill">
+<i class="fab fa-github" aria-hidden="true"></i>
+</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>COVID-19 in Bangladesh</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>A short description of the post.</p></p>
+</div>
+
+<div class="d-byline">
+  Ruimin Lin true 
+  
+<br/>09-15-2021
+</div>
+
+<div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-b01b8bcc5334ea224c76" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b01b8bcc5334ea224c76">{"x":{"visdat":{"38c81ce46ed6":["function () ","plotlyVisDat"]},"cur_data":"38c81ce46ed6","attrs":{"38c81ce46ed6":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","name":"Confirmed cases","inherit":true},"38c81ce46ed6.1":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","name":"Tests performed","inherit":true},"38c81ce46ed6.2":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","yaxis":"y2","name":"Vaccinations administered","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"date"},"title":"COVID-19 statistics in 2020 Bangladesh","yaxis":{"domain":[0,1],"automargin":true,"title":"Cases and tests count"},"yaxis2":{"title":"Vaccinations count","overlaying":"y","side":"right"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["2020-03-03","2020-03-04","2020-03-05","2020-03-06","2020-03-07","2020-03-08","2020-03-09","2020-03-10","2020-03-11","2020-03-12","2020-03-13","2020-03-14","2020-03-15","2020-03-16","2020-03-17","2020-03-18","2020-03-19","2020-03-20","2020-03-21","2020-03-22","2020-03-23","2020-03-24","2020-03-25","2020-03-26","2020-03-27","2020-03-28","2020-03-29","2020-03-30","2020-03-31","2020-04-01","2020-04-02","2020-04-03","2020-04-04","2020-04-05","2020-04-06","2020-04-07","2020-04-08","2020-04-09","2020-04-10","2020-04-11","2020-04-12","2020-04-13","2020-04-14","2020-04-15","2020-04-16","2020-04-17","2020-04-18","2020-04-19","2020-04-20","2020-04-21","2020-04-22","2020-04-23","2020-04-24","2020-04-25","2020-04-26","2020-04-27","2020-04-28","2020-04-29","2020-04-30","2020-05-01","2020-05-02","2020-05-03","2020-05-04","2020-05-05","2020-05-06","2020-05-07","2020-05-08","2020-05-09","2020-05-10","2020-05-11","2020-05-12","2020-05-13","2020-05-14","2020-05-15","2020-05-16","2020-05-17","2020-05-18","2020-05-19","2020-05-20","2020-05-21","2020-05-22","2020-05-23","2020-05-24","2020-05-25","2020-05-26","2020-05-27","2020-05-28","2020-05-29","2020-05-30","2020-05-31","2020-06-01","2020-06-02","2020-06-03","2020-06-04","2020-06-05","2020-06-06","2020-06-07","2020-06-08","2020-06-09","2020-06-10","2020-06-11","2020-06-12","2020-06-13","2020-06-14","2020-06-15","2020-06-16","2020-06-17","2020-06-18","2020-06-19","2020-06-20","2020-06-21","2020-06-22","2020-06-23","2020-06-24","2020-06-25","2020-06-26","2020-06-27","2020-06-28","2020-06-29","2020-06-30","2020-07-01","2020-07-02","2020-07-03","2020-07-04","2020-07-05","2020-07-06","2020-07-07","2020-07-08","2020-07-09","2020-07-10","2020-07-11","2020-07-12","2020-07-13","2020-07-14","2020-07-15","2020-07-16","2020-07-17","2020-07-18","2020-07-19","2020-07-20","2020-07-21","2020-07-22","2020-07-23","2020-07-24","2020-07-25","2020-07-26","2020-07-27","2020-07-28","2020-07-29","2020-07-30","2020-07-31","2020-08-01","2020-08-02","2020-08-03","2020-08-04","2020-08-05","2020-08-06","2020-08-07","2020-08-08","2020-08-09","2020-08-10","2020-08-11","2020-08-12","2020-08-13","2020-08-14","2020-08-15","2020-08-16","2020-08-17","2020-08-18","2020-08-19","2020-08-20","2020-08-21","2020-08-22","2020-08-23","2020-08-24","2020-08-25","2020-08-26","2020-08-27","2020-08-28","2020-08-29","2020-08-30","2020-08-31","2020-09-01","2020-09-02","2020-09-03","2020-09-04","2020-09-05","2020-09-06","2020-09-07","2020-09-08","2020-09-09","2020-09-10","2020-09-11","2020-09-12","2020-09-13","2020-09-14","2020-09-15","2020-09-16","2020-09-17","2020-09-18","2020-09-19","2020-09-20","2020-09-21","2020-09-22","2020-09-23","2020-09-24","2020-09-25","2020-09-26","2020-09-27","2020-09-28","2020-09-29","2020-09-30","2020-10-01","2020-10-02","2020-10-03","2020-10-04","2020-10-05","2020-10-06","2020-10-07","2020-10-08","2020-10-09","2020-10-10","2020-10-11","2020-10-12","2020-10-13","2020-10-14","2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-20","2020-10-21","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26","2020-10-27","2020-10-28","2020-10-29","2020-10-30","2020-10-31","2020-11-01","2020-11-02","2020-11-03","2020-11-04","2020-11-05","2020-11-06","2020-11-07","2020-11-08","2020-11-09","2020-11-10","2020-11-11","2020-11-12","2020-11-13","2020-11-14","2020-11-15","2020-11-16","2020-11-17","2020-11-18","2020-11-19","2020-11-20","2020-11-21","2020-11-22","2020-11-23","2020-11-24","2020-11-25","2020-11-26","2020-11-27","2020-11-28","2020-11-29","2020-11-30","2020-12-01","2020-12-02","2020-12-03","2020-12-04","2020-12-05","2020-12-06","2020-12-07","2020-12-08","2020-12-09","2020-12-10","2020-12-11","2020-12-12","2020-12-13","2020-12-14","2020-12-15","2020-12-16","2020-12-17","2020-12-18","2020-12-19","2020-12-20","2020-12-21","2020-12-22","2020-12-23","2020-12-24","2020-12-25","2020-12-26","2020-12-27","2020-12-28","2020-12-29","2020-12-30","2020-12-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(31,119,180,1)","width":1},"y":[0,0,0,0,0,3,0,0,0,0,0,0,2,3,2,4,3,3,5,2,6,6,0,5,4,0,0,1,2,3,2,5,9,18,35,41,54,112,94,58,139,182,209,219,341,266,306,312,492,434,390,414,503,309,418,497,549,641,564,571,552,665,688,786,790,706,709,636,887,1034,969,1162,1041,1202,930,1273,1602,1251,1617,1773,1694,1873,1532,1975,1166,1541,2029,2523,1764,2545,2381,2911,2695,2423,2828,2635,2743,2735,3171,3190,3187,3471,2856,3141,3099,3862,4008,3803,3243,3240,3531,3480,3412,3462,3946,3868,3504,3809,4014,3682,3775,4019,3114,3288,2738,3201,3027,3489,3360,2949,2686,2666,3099,3163,3533,2733,3034,2709,2459,2928,3057,2744,2856,2548,2520,2275,2772,2960,3009,2695,2772,2199,886,1356,1918,2654,2977,2851,2611,2487,2907,2996,2995,2617,2766,2644,2024,2595,3200,2747,2868,2401,2265,1973,2485,2545,2519,2436,2211,2131,1897,2174,1950,2582,2158,1929,1950,1592,2202,1892,1827,1892,1792,1282,1476,1812,1724,1615,1593,1541,1567,1546,1703,1557,1666,1540,1383,1106,1275,1407,1488,1436,1508,1396,1182,1125,1442,1499,1520,1441,1278,1203,1193,1472,1537,1684,1600,1527,1209,1274,1637,1380,1545,1696,1586,1094,1308,1436,1335,1493,1681,1604,1320,1568,1736,1659,1517,1842,1469,1289,1474,1683,1699,1733,1845,1767,1531,1837,2139,2212,2111,2364,2275,1847,2060,2419,2230,2156,2292,2273,1908,1788,2525,2293,2198,2316,2252,1798,1756,2198,2202,2159,1861,1884,1329,1355,1799,1877,1632,1134,1318,1267,1153,1470,1318,1367,1234,1163,834,1049,932,1181,1235,1014],"type":"scatter","mode":"lines","name":"Confirmed cases","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2020-03-03","2020-03-04","2020-03-05","2020-03-06","2020-03-07","2020-03-08","2020-03-09","2020-03-10","2020-03-11","2020-03-12","2020-03-13","2020-03-14","2020-03-15","2020-03-16","2020-03-17","2020-03-18","2020-03-19","2020-03-20","2020-03-21","2020-03-22","2020-03-23","2020-03-24","2020-03-25","2020-03-26","2020-03-27","2020-03-28","2020-03-29","2020-03-30","2020-03-31","2020-04-01","2020-04-02","2020-04-03","2020-04-04","2020-04-05","2020-04-06","2020-04-07","2020-04-08","2020-04-09","2020-04-10","2020-04-11","2020-04-12","2020-04-13","2020-04-14","2020-04-15","2020-04-16","2020-04-17","2020-04-18","2020-04-19","2020-04-20","2020-04-21","2020-04-22","2020-04-23","2020-04-24","2020-04-25","2020-04-26","2020-04-27","2020-04-28","2020-04-29","2020-04-30","2020-05-01","2020-05-02","2020-05-03","2020-05-04","2020-05-05","2020-05-06","2020-05-07","2020-05-08","2020-05-09","2020-05-10","2020-05-11","2020-05-12","2020-05-13","2020-05-14","2020-05-15","2020-05-16","2020-05-17","2020-05-18","2020-05-19","2020-05-20","2020-05-21","2020-05-22","2020-05-23","2020-05-24","2020-05-25","2020-05-26","2020-05-27","2020-05-28","2020-05-29","2020-05-30","2020-05-31","2020-06-01","2020-06-02","2020-06-03","2020-06-04","2020-06-05","2020-06-06","2020-06-07","2020-06-08","2020-06-09","2020-06-10","2020-06-11","2020-06-12","2020-06-13","2020-06-14","2020-06-15","2020-06-16","2020-06-17","2020-06-18","2020-06-19","2020-06-20","2020-06-21","2020-06-22","2020-06-23","2020-06-24","2020-06-25","2020-06-26","2020-06-27","2020-06-28","2020-06-29","2020-06-30","2020-07-01","2020-07-02","2020-07-03","2020-07-04","2020-07-05","2020-07-06","2020-07-07","2020-07-08","2020-07-09","2020-07-10","2020-07-11","2020-07-12","2020-07-13","2020-07-14","2020-07-15","2020-07-16","2020-07-17","2020-07-18","2020-07-19","2020-07-20","2020-07-21","2020-07-22","2020-07-23","2020-07-24","2020-07-25","2020-07-26","2020-07-27","2020-07-28","2020-07-29","2020-07-30","2020-07-31","2020-08-01","2020-08-02","2020-08-03","2020-08-04","2020-08-05","2020-08-06","2020-08-07","2020-08-08","2020-08-09","2020-08-10","2020-08-11","2020-08-12","2020-08-13","2020-08-14","2020-08-15","2020-08-16","2020-08-17","2020-08-18","2020-08-19","2020-08-20","2020-08-21","2020-08-22","2020-08-23","2020-08-24","2020-08-25","2020-08-26","2020-08-27","2020-08-28","2020-08-29","2020-08-30","2020-08-31","2020-09-01","2020-09-02","2020-09-03","2020-09-04","2020-09-05","2020-09-06","2020-09-07","2020-09-08","2020-09-09","2020-09-10","2020-09-11","2020-09-12","2020-09-13","2020-09-14","2020-09-15","2020-09-16","2020-09-17","2020-09-18","2020-09-19","2020-09-20","2020-09-21","2020-09-22","2020-09-23","2020-09-24","2020-09-25","2020-09-26","2020-09-27","2020-09-28","2020-09-29","2020-09-30","2020-10-01","2020-10-02","2020-10-03","2020-10-04","2020-10-05","2020-10-06","2020-10-07","2020-10-08","2020-10-09","2020-10-10","2020-10-11","2020-10-12","2020-10-13","2020-10-14","2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-20","2020-10-21","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26","2020-10-27","2020-10-28","2020-10-29","2020-10-30","2020-10-31","2020-11-01","2020-11-02","2020-11-03","2020-11-04","2020-11-05","2020-11-06","2020-11-07","2020-11-08","2020-11-09","2020-11-10","2020-11-11","2020-11-12","2020-11-13","2020-11-14","2020-11-15","2020-11-16","2020-11-17","2020-11-18","2020-11-19","2020-11-20","2020-11-21","2020-11-22","2020-11-23","2020-11-24","2020-11-25","2020-11-26","2020-11-27","2020-11-28","2020-11-29","2020-11-30","2020-12-01","2020-12-02","2020-12-03","2020-12-04","2020-12-05","2020-12-06","2020-12-07","2020-12-08","2020-12-09","2020-12-10","2020-12-11","2020-12-12","2020-12-13","2020-12-14","2020-12-15","2020-12-16","2020-12-17","2020-12-18","2020-12-19","2020-12-20","2020-12-21","2020-12-22","2020-12-23","2020-12-24","2020-12-25","2020-12-26","2020-12-27","2020-12-28","2020-12-29","2020-12-30","2020-12-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(255,127,14,1)","width":1},"y":[108,3,0,9,7,10,10,16,24,24,30,27,25,49,39,46,36,36,65,56,92,82,126,106,50,109,153,264,157,147,207,434,367,696,792,981,1097,1184,649,1340,1570,1905,1740,2135,2190,2114,2634,2663,2974,3096,3416,3686,3337,3476,3812,4332,4968,4965,5573,5827,5368,6260,5711,0,6241,5867,5941,5465,5738,7208,6773,7900,7392,8582,6782,8114,9788,8449,10260,10262,9727,10834,8908,9451,5407,8015,9310,11301,9997,11876,11339,12704,12510,12694,14088,12486,13136,12944,14664,15965,15772,15990,16638,14505,15038,17214,17527,16259,15045,14031,15585,15555,16292,16433,17999,18498,15157,18099,17837,18426,17875,18362,14650,14727,13988,14245,13173,15672,15632,13488,11193,11059,12423,13453,14002,12889,13460,10923,10625,13362,12898,12050,12398,12027,10446,10078,12859,12714,14127,12937,12614,8802,3684,4249,7712,11160,12708,12699,11737,10759,12849,14820,14751,13162,12856,12891,10018,12523,14630,14678,14059,12943,11356,10801,13382,14153,15070,15124,13741,11689,11934,12454,12209,15204,14422,13073,12847,11354,15412,14973,14755,15559,14747,10723,12999,14216,14050,13360,13673,12730,13170,11591,13053,14164,14150,12900,12473,10765,10685,11922,12869,13404,11420,11176,9554,9859,11767,12345,13032,12605,11256,10859,9467,13227,13815,14411,14104,13577,11573,11866,15146,13611,14086,14958,14119,10998,10998,11103,12617,12357,14268,14141,11532,11532,11532,14061,13914,15225,13521,11419,12760,14042,13520,14524,17112,13539,11795,14060,15768,15990,16469,17531,15607,12643,13870,16059,15018,16001,17052,16378,14012,13737,15372,15501,15972,16807,15430,13540,13218,14369,17084,17042,16265,16323,12630,12748,16828,19054,17025,13191,14336,12300,12300,15669,15145,15932,13227,13695,9912,12650,12617,14588,15229,13254],"type":"scatter","mode":"lines","name":"Tests performed","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2020-03-03","2020-03-04","2020-03-05","2020-03-06","2020-03-07","2020-03-08","2020-03-09","2020-03-10","2020-03-11","2020-03-12","2020-03-13","2020-03-14","2020-03-15","2020-03-16","2020-03-17","2020-03-18","2020-03-19","2020-03-20","2020-03-21","2020-03-22","2020-03-23","2020-03-24","2020-03-25","2020-03-26","2020-03-27","2020-03-28","2020-03-29","2020-03-30","2020-03-31","2020-04-01","2020-04-02","2020-04-03","2020-04-04","2020-04-05","2020-04-06","2020-04-07","2020-04-08","2020-04-09","2020-04-10","2020-04-11","2020-04-12","2020-04-13","2020-04-14","2020-04-15","2020-04-16","2020-04-17","2020-04-18","2020-04-19","2020-04-20","2020-04-21","2020-04-22","2020-04-23","2020-04-24","2020-04-25","2020-04-26","2020-04-27","2020-04-28","2020-04-29","2020-04-30","2020-05-01","2020-05-02","2020-05-03","2020-05-04","2020-05-05","2020-05-06","2020-05-07","2020-05-08","2020-05-09","2020-05-10","2020-05-11","2020-05-12","2020-05-13","2020-05-14","2020-05-15","2020-05-16","2020-05-17","2020-05-18","2020-05-19","2020-05-20","2020-05-21","2020-05-22","2020-05-23","2020-05-24","2020-05-25","2020-05-26","2020-05-27","2020-05-28","2020-05-29","2020-05-30","2020-05-31","2020-06-01","2020-06-02","2020-06-03","2020-06-04","2020-06-05","2020-06-06","2020-06-07","2020-06-08","2020-06-09","2020-06-10","2020-06-11","2020-06-12","2020-06-13","2020-06-14","2020-06-15","2020-06-16","2020-06-17","2020-06-18","2020-06-19","2020-06-20","2020-06-21","2020-06-22","2020-06-23","2020-06-24","2020-06-25","2020-06-26","2020-06-27","2020-06-28","2020-06-29","2020-06-30","2020-07-01","2020-07-02","2020-07-03","2020-07-04","2020-07-05","2020-07-06","2020-07-07","2020-07-08","2020-07-09","2020-07-10","2020-07-11","2020-07-12","2020-07-13","2020-07-14","2020-07-15","2020-07-16","2020-07-17","2020-07-18","2020-07-19","2020-07-20","2020-07-21","2020-07-22","2020-07-23","2020-07-24","2020-07-25","2020-07-26","2020-07-27","2020-07-28","2020-07-29","2020-07-30","2020-07-31","2020-08-01","2020-08-02","2020-08-03","2020-08-04","2020-08-05","2020-08-06","2020-08-07","2020-08-08","2020-08-09","2020-08-10","2020-08-11","2020-08-12","2020-08-13","2020-08-14","2020-08-15","2020-08-16","2020-08-17","2020-08-18","2020-08-19","2020-08-20","2020-08-21","2020-08-22","2020-08-23","2020-08-24","2020-08-25","2020-08-26","2020-08-27","2020-08-28","2020-08-29","2020-08-30","2020-08-31","2020-09-01","2020-09-02","2020-09-03","2020-09-04","2020-09-05","2020-09-06","2020-09-07","2020-09-08","2020-09-09","2020-09-10","2020-09-11","2020-09-12","2020-09-13","2020-09-14","2020-09-15","2020-09-16","2020-09-17","2020-09-18","2020-09-19","2020-09-20","2020-09-21","2020-09-22","2020-09-23","2020-09-24","2020-09-25","2020-09-26","2020-09-27","2020-09-28","2020-09-29","2020-09-30","2020-10-01","2020-10-02","2020-10-03","2020-10-04","2020-10-05","2020-10-06","2020-10-07","2020-10-08","2020-10-09","2020-10-10","2020-10-11","2020-10-12","2020-10-13","2020-10-14","2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-20","2020-10-21","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26","2020-10-27","2020-10-28","2020-10-29","2020-10-30","2020-10-31","2020-11-01","2020-11-02","2020-11-03","2020-11-04","2020-11-05","2020-11-06","2020-11-07","2020-11-08","2020-11-09","2020-11-10","2020-11-11","2020-11-12","2020-11-13","2020-11-14","2020-11-15","2020-11-16","2020-11-17","2020-11-18","2020-11-19","2020-11-20","2020-11-21","2020-11-22","2020-11-23","2020-11-24","2020-11-25","2020-11-26","2020-11-27","2020-11-28","2020-11-29","2020-11-30","2020-12-01","2020-12-02","2020-12-03","2020-12-04","2020-12-05","2020-12-06","2020-12-07","2020-12-08","2020-12-09","2020-12-10","2020-12-11","2020-12-12","2020-12-13","2020-12-14","2020-12-15","2020-12-16","2020-12-17","2020-12-18","2020-12-19","2020-12-20","2020-12-21","2020-12-22","2020-12-23","2020-12-24","2020-12-25","2020-12-26","2020-12-27","2020-12-28","2020-12-29","2020-12-30","2020-12-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(44,160,44,1)","width":1},"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"type":"scatter","mode":"lines","yaxis":"y2","name":"Vaccinations administered","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-c1660d827ea553496ba8" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1660d827ea553496ba8">{"x":{"visdat":{"38c8d8747ce":["function () ","plotlyVisDat"]},"cur_data":"38c8d8747ce","attrs":{"38c8d8747ce":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","name":"Confirmed cases","inherit":true},"38c8d8747ce.1":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","name":"Tests performed","inherit":true},"38c8d8747ce.2":{"x":{},"hovertemplate":"Date: %{x} <br>Count: %{y}","line":{"width":1},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","yaxis":"y2","name":"Vaccinations administered","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"date"},"title":"COVID-19 statistics in 2021 Bangladesh","yaxis":{"domain":[0,1],"automargin":true,"title":"Cases and tests count"},"yaxis2":{"title":"Vaccinations count","overlaying":"y","side":"right"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["2021-01-01","2021-01-02","2021-01-03","2021-01-04","2021-01-05","2021-01-06","2021-01-07","2021-01-08","2021-01-09","2021-01-10","2021-01-11","2021-01-12","2021-01-13","2021-01-14","2021-01-15","2021-01-16","2021-01-17","2021-01-18","2021-01-19","2021-01-20","2021-01-21","2021-01-22","2021-01-23","2021-01-24","2021-01-25","2021-01-26","2021-01-27","2021-01-28","2021-01-29","2021-01-30","2021-01-31","2021-02-01","2021-02-02","2021-02-03","2021-02-04","2021-02-05","2021-02-06","2021-02-07","2021-02-08","2021-02-09","2021-02-10","2021-02-11","2021-02-12","2021-02-13","2021-02-14","2021-02-15","2021-02-16","2021-02-17","2021-02-18","2021-02-19","2021-02-20","2021-02-21","2021-02-22","2021-02-23","2021-02-24","2021-02-25","2021-02-26","2021-02-27","2021-02-28","2021-03-01","2021-03-02","2021-03-03","2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07","2021-05-08","2021-05-09","2021-05-10","2021-05-11","2021-05-12","2021-05-13","2021-05-14","2021-05-15","2021-05-16","2021-05-17","2021-05-18","2021-05-19","2021-05-20","2021-05-21","2021-05-22","2021-05-23","2021-05-24","2021-05-25","2021-05-26","2021-05-27","2021-05-28","2021-05-29","2021-05-30","2021-05-31","2021-06-01","2021-06-02","2021-06-03","2021-06-04","2021-06-05","2021-06-06","2021-06-07","2021-06-08","2021-06-09","2021-06-10","2021-06-11","2021-06-12","2021-06-13","2021-06-14","2021-06-15","2021-06-16","2021-06-17","2021-06-18","2021-06-19","2021-06-20","2021-06-21","2021-06-22","2021-06-23","2021-06-24","2021-06-25","2021-06-26","2021-06-27","2021-06-28","2021-06-29","2021-06-30","2021-07-01","2021-07-02","2021-07-03","2021-07-04","2021-07-05","2021-07-06","2021-07-07","2021-07-08","2021-07-09","2021-07-10","2021-07-11","2021-07-12","2021-07-13","2021-07-14","2021-07-15","2021-07-16","2021-07-17","2021-07-18","2021-07-19","2021-07-20","2021-07-21","2021-07-22","2021-07-23","2021-07-24","2021-07-25","2021-07-26","2021-07-27","2021-07-28","2021-07-29","2021-07-30","2021-07-31","2021-08-01","2021-08-02","2021-08-03","2021-08-04","2021-08-05","2021-08-06","2021-08-07","2021-08-08","2021-08-09","2021-08-10","2021-08-11","2021-08-12","2021-08-13","2021-08-14","2021-08-15","2021-08-16","2021-08-17","2021-08-18","2021-08-19","2021-08-20","2021-08-21","2021-08-22","2021-08-23","2021-08-24","2021-08-25","2021-08-26","2021-08-27","2021-08-28","2021-08-29","2021-08-30","2021-08-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(31,119,180,1)","width":1},"y":[990,684,835,910,991,978,1007,785,692,1071,849,718,890,813,762,578,569,697,702,656,584,619,436,473,602,515,528,509,454,363,369,443,525,438,485,435,305,292,316,387,388,378,444,291,326,446,396,443,391,406,350,327,366,399,428,410,470,407,385,585,515,614,619,635,540,606,845,912,1018,1051,1066,1014,1159,1773,1719,1865,2187,1899,1868,2172,2809,3554,3567,3587,3737,3674,3908,5181,5042,5358,6469,6830,5683,7087,7075,7213,7626,6854,7462,5343,5819,7201,6028,5185,4192,4417,3473,3698,4271,4559,4280,4014,3629,2697,2922,3306,3031,2955,2341,2177,1452,1359,1739,1914,1742,1822,1682,1285,1386,1514,1230,1140,1290,848,261,363,698,1272,1608,1457,1504,1028,1354,1441,1675,1497,1292,1358,1043,1444,1710,1765,1988,1687,1887,1447,1676,1970,2322,2537,2576,2454,1637,2436,3050,3319,3956,3840,3883,3057,3641,4636,4846,5727,6058,5869,4334,5268,8364,7666,8822,8301,8483,6214,8661,9964,11525,11162,11651,11324,8772,11874,13768,12198,12383,12236,12148,8489,11578,13321,11579,7614,3697,6364,6780,11291,15192,14925,16230,15271,13862,9369,14844,15989,15776,13817,12744,12606,8136,10299,11463,11164,10420,10126,8465,6885,6684,6959,7535,7248,6566,5993,3991,4804,5717,5249,4966,4698,3525,3436,3948,3724,3357],"type":"scatter","mode":"lines","name":"Confirmed cases","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-01-01","2021-01-02","2021-01-03","2021-01-04","2021-01-05","2021-01-06","2021-01-07","2021-01-08","2021-01-09","2021-01-10","2021-01-11","2021-01-12","2021-01-13","2021-01-14","2021-01-15","2021-01-16","2021-01-17","2021-01-18","2021-01-19","2021-01-20","2021-01-21","2021-01-22","2021-01-23","2021-01-24","2021-01-25","2021-01-26","2021-01-27","2021-01-28","2021-01-29","2021-01-30","2021-01-31","2021-02-01","2021-02-02","2021-02-03","2021-02-04","2021-02-05","2021-02-06","2021-02-07","2021-02-08","2021-02-09","2021-02-10","2021-02-11","2021-02-12","2021-02-13","2021-02-14","2021-02-15","2021-02-16","2021-02-17","2021-02-18","2021-02-19","2021-02-20","2021-02-21","2021-02-22","2021-02-23","2021-02-24","2021-02-25","2021-02-26","2021-02-27","2021-02-28","2021-03-01","2021-03-02","2021-03-03","2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07","2021-05-08","2021-05-09","2021-05-10","2021-05-11","2021-05-12","2021-05-13","2021-05-14","2021-05-15","2021-05-16","2021-05-17","2021-05-18","2021-05-19","2021-05-20","2021-05-21","2021-05-22","2021-05-23","2021-05-24","2021-05-25","2021-05-26","2021-05-27","2021-05-28","2021-05-29","2021-05-30","2021-05-31","2021-06-01","2021-06-02","2021-06-03","2021-06-04","2021-06-05","2021-06-06","2021-06-07","2021-06-08","2021-06-09","2021-06-10","2021-06-11","2021-06-12","2021-06-13","2021-06-14","2021-06-15","2021-06-16","2021-06-17","2021-06-18","2021-06-19","2021-06-20","2021-06-21","2021-06-22","2021-06-23","2021-06-24","2021-06-25","2021-06-26","2021-06-27","2021-06-28","2021-06-29","2021-06-30","2021-07-01","2021-07-02","2021-07-03","2021-07-04","2021-07-05","2021-07-06","2021-07-07","2021-07-08","2021-07-09","2021-07-10","2021-07-11","2021-07-12","2021-07-13","2021-07-14","2021-07-15","2021-07-16","2021-07-17","2021-07-18","2021-07-19","2021-07-20","2021-07-21","2021-07-22","2021-07-23","2021-07-24","2021-07-25","2021-07-26","2021-07-27","2021-07-28","2021-07-29","2021-07-30","2021-07-31","2021-08-01","2021-08-02","2021-08-03","2021-08-04","2021-08-05","2021-08-06","2021-08-07","2021-08-08","2021-08-09","2021-08-10","2021-08-11","2021-08-12","2021-08-13","2021-08-14","2021-08-15","2021-08-16","2021-08-17","2021-08-18","2021-08-19","2021-08-20","2021-08-21","2021-08-22","2021-08-23","2021-08-24","2021-08-25","2021-08-26","2021-08-27","2021-08-28","2021-08-29","2021-08-30","2021-08-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(255,127,14,1)","width":1},"y":[12103,9701,10925,10925,14462,15544,15381,15381,12908,12920,14097,14363,15727,16608,13678,12215,13446,12707,15097,15410,14761,14846,11115,14169,14829,14401,15720,14830,12075,12084,12225,12475,14452,14985,15273,15566,12135,12135,13762,14468,14999,15776,14328,12871,12900,14138,14788,16612,14603,14232,11148,14036,11103,12748,16152,15560,15032,12348,13411,13570,15325,16414,15985,13710,13082,14092,16958,17775,17032,18058,16111,16206,16206,18695,20748,24275,20925,18917,19900,21108,25111,25954,27502,27045,27229,27229,22136,28195,26620,26931,28198,29339,24548,30724,30239,34311,34630,33193,31654,26077,29376,34968,32955,24825,19959,18906,16185,19404,24152,27056,28408,27429,25896,20571,21922,25786,24237,24237,24928,21046,15117,14158,13431,21984,20284,21585,17013,14703,16915,16848,14184,15296,13471,7835,3758,5430,10347,16855,20528,19437,18294,12230,15205,17683,16624,16434,16434,14606,13184,14277,18178,18250,20259,16972,18151,13115,15613,17169,19165,19165,19447,18535,11590,18749,20602,23265,23807,24871,20882,16964,22231,24057,25028,28256,30391,27653,27653,24400,35059,31982,35105,32055,32055,22687,29879,34002,36631,35639,36850,36586,27884,40015,44067,41775,12383,44941,41947,29214,39806,39806,45012,45012,39510,20493,20827,20827,37587,50952,52478,52282,45044,0,49529,49529,53462,49514,46995,46995,31714,42003,47207,47424,44430,45078,45078,45078,33001,33015,33015,39278,41014,41014,41014,31689,36789,34708,33640,34111,34111,25129,27921,27921,0],"type":"scatter","mode":"lines","name":"Tests performed","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-01-01","2021-01-02","2021-01-03","2021-01-04","2021-01-05","2021-01-06","2021-01-07","2021-01-08","2021-01-09","2021-01-10","2021-01-11","2021-01-12","2021-01-13","2021-01-14","2021-01-15","2021-01-16","2021-01-17","2021-01-18","2021-01-19","2021-01-20","2021-01-21","2021-01-22","2021-01-23","2021-01-24","2021-01-25","2021-01-26","2021-01-27","2021-01-28","2021-01-29","2021-01-30","2021-01-31","2021-02-01","2021-02-02","2021-02-03","2021-02-04","2021-02-05","2021-02-06","2021-02-07","2021-02-08","2021-02-09","2021-02-10","2021-02-11","2021-02-12","2021-02-13","2021-02-14","2021-02-15","2021-02-16","2021-02-17","2021-02-18","2021-02-19","2021-02-20","2021-02-21","2021-02-22","2021-02-23","2021-02-24","2021-02-25","2021-02-26","2021-02-27","2021-02-28","2021-03-01","2021-03-02","2021-03-03","2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07","2021-05-08","2021-05-09","2021-05-10","2021-05-11","2021-05-12","2021-05-13","2021-05-14","2021-05-15","2021-05-16","2021-05-17","2021-05-18","2021-05-19","2021-05-20","2021-05-21","2021-05-22","2021-05-23","2021-05-24","2021-05-25","2021-05-26","2021-05-27","2021-05-28","2021-05-29","2021-05-30","2021-05-31","2021-06-01","2021-06-02","2021-06-03","2021-06-04","2021-06-05","2021-06-06","2021-06-07","2021-06-08","2021-06-09","2021-06-10","2021-06-11","2021-06-12","2021-06-13","2021-06-14","2021-06-15","2021-06-16","2021-06-17","2021-06-18","2021-06-19","2021-06-20","2021-06-21","2021-06-22","2021-06-23","2021-06-24","2021-06-25","2021-06-26","2021-06-27","2021-06-28","2021-06-29","2021-06-30","2021-07-01","2021-07-02","2021-07-03","2021-07-04","2021-07-05","2021-07-06","2021-07-07","2021-07-08","2021-07-09","2021-07-10","2021-07-11","2021-07-12","2021-07-13","2021-07-14","2021-07-15","2021-07-16","2021-07-17","2021-07-18","2021-07-19","2021-07-20","2021-07-21","2021-07-22","2021-07-23","2021-07-24","2021-07-25","2021-07-26","2021-07-27","2021-07-28","2021-07-29","2021-07-30","2021-07-31","2021-08-01","2021-08-02","2021-08-03","2021-08-04","2021-08-05","2021-08-06","2021-08-07","2021-08-08","2021-08-09","2021-08-10","2021-08-11","2021-08-12","2021-08-13","2021-08-14","2021-08-15","2021-08-16","2021-08-17","2021-08-18","2021-08-19","2021-08-20","2021-08-21","2021-08-22","2021-08-23","2021-08-24","2021-08-25","2021-08-26","2021-08-27","2021-08-28","2021-08-29","2021-08-30","2021-08-31"],"hovertemplate":["Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}","Date: %{x} <br>Count: %{y}"],"line":{"color":"rgba(44,160,44,1)","width":1},"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,541,0,0,0,0,0,0,0,0,0,0,0,0,158451,0,0,0,169353,226678,226902,226755,261945,0,0,0,0,182896,181985,177902,0,0,125752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70407,0,0,0,0,0,0,42260,0,0,45538,41322,0,0,96127,0,0,189348,161335,0,0,0,0,0,0,0,0,0,0,0,0,191090,132248,121186,119101,107549,0,0,0,86938,83578,103854,102958,0,0,94699,0,0,57632,0,0,0,0,56940,62354,11563,97556,0,0,0,0,33655,0,0,0,0,19468,12256,1178,0,0,0,0,12868,6462,5564,0,0,0,0,0,0,0,0,1105,0,0,3371,3003,224,227,5146,0,0,0,0,1581,1872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,207975,0,0,43511,38208,68288,447912,268787,544784,1114818,292550,313558,648301,0,0,0,0,2979212,996870,613202,496926,412681,163535,279636,276688,74297,439705,335512,398866,0,0,398396,453553,470247,513713,529744,0,0,0,0,0],"type":"scatter","mode":"lines","yaxis":"y2","name":"Vaccinations administered","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
