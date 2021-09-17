@@ -28,7 +28,7 @@ This assessment is due Fri Sep 17 2021 11.55PM AEST.
 
 My selected country is [Bangladesh].
 
-The relevant blog post for this assessment is in [post2].html
+The relevant blog post for this assessment is in https://etc5523-rlin0004.netlify.app/posts/2021-09-15-post2/
 
 - [ ] Selected a new country
 - [ ] Data Story 1
