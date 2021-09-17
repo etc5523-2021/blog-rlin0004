@@ -1,7 +1,7 @@
 ---
 title: "COVID-19 in Bangladesh"
 description: |
-  A short description of the post.
+  Let's discover the COVID-19 situation in Bangladesh!
 author:
   - name: Ruimin Lin
     url: {}
@@ -21,11 +21,35 @@ library(distill)
 library(tidyverse)
 library(knitr)
 library(kableExtra)
-library(sparkline)
-library(DT)
 library(plotly)
-library(coronavirus)
-library(leaflet)
+library(GGally)
+```
+
+
+### Data Description
+
+The original COVID-19 and vaccination data is obtained from [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data). The data is then filtered to have the statistics for Bangladesh only and cleaned so that it is ready for further exploration.
+
+The new variables added from the last post (COVID-19 in Brazil) in the data are:
+
+```{r}
+bt <- tibble(
+  Variable = c("positive_rate",
+               "new_tests",
+               "tests_per_case"),
+  Description = c("The share of COVID-19 tests that are positive, given as a rolling 7-day average",
+                  "Count of daily tests performed",
+                  "Tests conducted per new confirmed case of COVID-19, given as a rolling 7-day average ")
+)
+```
+
+```{r}
+bt %>%
+  kable(caption = "Extra variable description for owid COVID-19 data") %>%
+  column_spec(1, bold = TRUE, background = "beige") %>%
+  kable_styling() %>%
+  kable_paper() %>%
+  footnote(general = "Data collected from Our World in Data")
 ```
 
 
@@ -44,40 +68,26 @@ covid_bd <- read_csv(here::here("owid-covid-data.csv")) %>%
 covid_bd[is.na(covid_bd)] <- 0
 ```
 
-```{r}
-covid_bdp <- covid_bd %>%
-  group_by(year, month) %>%
-  summarise(new_cases = sum(new_cases),
-            new_deaths = sum(new_deaths),
-            new_tests = sum(new_tests))
-```
+### Exploration
 
 ```{r}
-covid_bdp1 <- covid_bd %>%
-  ungroup() %>%
-  mutate(case_growth = round(((new_cases - lag(new_cases))/lag(new_cases))*100,2),
-         death_growth = round(((new_deaths - lag(new_deaths))/lag(new_deaths))*100,2),
-         test_growth =  round(((new_tests - lag(new_tests))/lag(new_tests))*100,2),
-         vaccination_growth = round(((new_vaccinations - lag(new_vaccinations))/lag(new_vaccinations))*100,2))%>%
-  select(date,year, month, new_cases, new_deaths, new_vaccinations, new_tests,
-         case_growth, death_growth, test_growth, vaccination_growth)
-
-covid_bdp1[is.na(covid_bdp1)] <- 0
-covid_bdp1$case_growth[which(is.infinite(covid_bdp1$case_growth))] <- 0
-covid_bdp1$death_growth[which(is.infinite(covid_bdp1$death_growth))] <- 0
-covid_bdp1$test_growth[which(is.infinite(covid_bdp1$test_growth))] <- 0
-covid_bdp1$vaccination_growth[which(is.infinite(covid_bdp1$vaccination_growth))] <- 0
-```
-
-```{r}
-bd1 <- covid_bdp1 %>%
+bd1 <- covid_bd %>%
   filter(year == 2020) %>%
   plot_ly(x = ~date, hovertemplate = "Date: %{x} <br>Count: %{y}",
           line = list(width = 1)) %>%
-  add_lines(y = ~new_cases, name = "Confirmed cases",) %>%
-  add_lines(y = ~new_tests, name = "Tests performed") %>%
-  add_lines(y = ~new_vaccinations, 
-            yaxis = "y2", name = "Vaccinations administered") %>%
+  add_trace(y = ~new_cases, name = "Confirmed cases",
+            type = "scatter", mode = "lines") %>%
+  add_trace(y = ~new_tests, name = "Tests performed",
+            type = "scatter", mode = "lines") %>%
+  add_trace(y = ~new_vaccinations, 
+            yaxis = "y2", name = "Vaccinations administered",
+            type = "scatter", mode = "lines") %>%
+  add_trace(x = ~date[85], y = ~new_tests[85], yaxis = "y", 
+            name = "drop1", type = "scatter",
+            mode = "lines+markers", hoverinfo = "y") %>%
+  add_trace(x = ~date[153], y = ~new_tests[153], yaxis = "y", 
+            name = "drop2", type = "scatter",
+            mode = "lines+markers", hoverinfo = "y") %>%
   layout(title = "COVID-19 statistics in 2020 Bangladesh",
          yaxis = list(title = "Cases and tests count"),
          yaxis2 = list(title = "Vaccinations count", overlaying = "y", side = "right"))
@@ -85,16 +95,27 @@ bd1 <- covid_bdp1 %>%
 bd1 %>% 
   rangeslider()
 ```
+First, let's take a look at the COVID-19 trend in 2020, we can determine a highly correlated relationship for the tests performed for every new cases confirmed.
+
+Moving across the date slider, we can discover that in most cases, each drop in tests performed is corresponding to a drop in confirmed cases. For example, points at `May 26`,`Aug 2`, `Aug 16` and etc.
+
+This finding leads to the problem that "a significant decrease on the confirmed cases, may be the result of minimized tests performed on the day."
 
 ```{r}
-bd2 <- covid_bdp1 %>%
+bd2 <- covid_bd %>%
   filter(year == 2021) %>%
   plot_ly(x = ~date, hovertemplate = "Date: %{x} <br>Count: %{y}",
           line = list(width = 1)) %>%
-  add_lines(y = ~new_cases, name = "Confirmed cases",) %>%
-  add_lines(y = ~new_tests, name = "Tests performed") %>%
-  add_lines(y = ~new_vaccinations, 
-            yaxis = "y2", name = "Vaccinations administered") %>%
+  add_trace(y = ~new_cases, name = "Confirmed cases", type = "scatter",
+            mode = "lines") %>%
+  add_trace(y = ~new_tests, name = "Tests performed", type = "scatter",
+            mode = "lines") %>%
+  add_trace(y = ~new_vaccinations, 
+            yaxis = "y2", name = "Vaccinations administered",
+            type = "scatter", mode = "lines") %>%
+  add_trace(x = ~date[220], y = ~max(new_vaccinations), yaxis = "y2", 
+            name = "vaccination peak", type = "scatter",
+            mode = "lines+markers", hoverinfo = "y2") %>%
   layout(title = "COVID-19 statistics in 2021 Bangladesh",
          yaxis = list(title = "Cases and tests count"),
          yaxis2 = list(title = "Vaccinations count", overlaying = "y", side = "right"))
@@ -103,6 +124,17 @@ bd2 %>%
   rangeslider()
 ```
 
+Luckily the worry did not came true for Bangladesh, that when investigating the COVID-19 trend in 2021, we can capture that the number of tests performed is 2.5 times more than the number of tests performed in 2020 for Bangladesh. 
+At this time, the vaccinations starts to administered in Bangladesh, Bangladesh shows a great enthusiastic of citizens in taking the vaccination as the peak vaccinations administered on a day is around 3 million on `Aug 8, 2021`.
 
+```{r, fig.height = 5, fig.width= 10}
+bd_gp <- covid_bd[6:10] %>%
+  ggpairs() +
+  theme_bw()
 
+bd_gp
+```
 
+From the scatterplot matrix above we can discover that most relationship with variable `new_cases` (in other word, confirmed cases) are positive. On the other hand, relationships with `new_vaccinations` are not clear compare to other variables, as we don't have enough records of vaccinations to plot the relationships.
+
+The density plot for `positive_rate` demonstrates the presence of bimodal distribution with main peak around 0.3 and lower peak around 0.2. Implying that for majority of tests, the probability of tests taken will recorded as positive COVID-19 case given as a rolling 7-day average will be around 30%. 
