@@ -10,7 +10,7 @@ This assessment is due Fri Sep 3 2021 11.55PM AEST.
 
 My selected country is [Brazil].
 
-The relevant blog post for this assessment is in [post1].html
+The relevant blog post for this assessment is in [analysis].html or [post1].html.
 
 - [ ] Selected a country
 - [ ] Website with R markdown 
