@@ -23,6 +23,8 @@ library(knitr)
 library(kableExtra)
 library(plotly)
 library(GGally)
+library(coronavirus)
+library(tigris)
 ```
 
 
@@ -126,6 +128,55 @@ bd2 %>%
 
 Luckily the worry did not came true for Bangladesh, that when investigating the COVID-19 trend in 2021, we can capture that the number of tests performed is 2.5 times more than the number of tests performed in 2020 for Bangladesh. 
 At this time, the vaccinations starts to administered in Bangladesh, Bangladesh shows a great enthusiastic of citizens in taking the vaccination as the peak vaccinations administered on a day is around 3 million on `Aug 8, 2021`.
+
+Speak of vaccinations, how does Bangladesh perform compare to other countries in the world?
+
+```{r}
+covida <- read_csv(here::here("owid-covid-data.csv")) %>%
+  select(continent, location, iso_code, total_vaccinations, total_cases) %>%
+  filter(continent == "Asia") 
+
+covida[is.na(covida)] <- 0
+
+covida <- covida %>%
+  group_by(location) %>%
+  summarise(total_vaccinations = max(total_vaccinations),
+            total_cases = max(total_cases),
+            iso_code = max(iso_code))
+
+bangladesh <- covida %>%
+  filter(location == "Bangladesh")
+```
+
+```{r}
+l <- list(color = toRGB("white"), width = 2)
+g <- list(
+  scope = "asia",
+  showframe = F,
+  showland = T,
+  lakecolor = toRGB("white")
+)
+
+amap <- plot_geo(covida, locationmode = "asia")
+
+amap <- amap %>%
+  add_trace(
+    z = ~total_vaccinations,
+    text = ~location,
+    locations = ~iso_code,
+    color = ~total_vaccinations,
+    colors = 'Greens'
+  ) 
+amap <- amap %>%
+  layout(geo = g) %>%
+  add_text(x = 72, y = 24, text = "Bangladesh ->")
+
+amap
+
+```
+The map demonstrates that Bangladesh is performing moderately on citizens taking vaccinations, that China is taking the lead of vaccination administered following by India.
+
+
 
 ```{r, fig.height = 5, fig.width= 10}
 bd_gp <- covid_bd[6:10] %>%
